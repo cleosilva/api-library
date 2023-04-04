@@ -3,7 +3,8 @@ import livros from "./livrosRoutes.js";
 import autores from "./autoresRoutes.js";
 
 const routes = (app) => {
-  app.route("/").get((res) => {
+  // eslint-disable-next-line no-unused-vars
+  app.route("/").get((res, req) => {
     res.status(200).send({ titulo: "Curso de Node" });
   });
 
